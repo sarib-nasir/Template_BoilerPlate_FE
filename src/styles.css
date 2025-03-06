@@ -1,49 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  --antd-wave-shadow-color: none;
+  --scroll-bar: 0;
+}
+*, *::before, *::after {
+  box-sizing: content-box; /* Default value */
+}
 body {
-    background-color: #f4efe0 !important;
-    font-family: Arial, sans-serif;
-  }
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #f4efe0;
-    border-bottom: 1px solid #706a5c;
-  }
-  nz-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  .hero {
-    text-align: left;
-    padding: 50px;
-  }
-  .hero h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #000;
-  }
-  .icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .icons i {
-    font-size: 24px;
-    color: #5a5a5a;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 50px;
-  }
-  nz-card {
-    border-radius: 10px;
-  }
-  .collect-button {
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-  }
+  background-color: #f4efe0 !important;
+  font-family: Arial, sans-serif;
+}
+nz-header {
+  padding: 0px;
+}

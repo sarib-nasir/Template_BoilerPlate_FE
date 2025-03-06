@@ -1,29 +1,140 @@
-<nz-header class="logo">
-    <div >Miljö</div>
-    <nz-menu nzTheme="light" nzMode="horizontal">
-    <nz-menu-item>Your Waste</nz-menu-item>
-    <nz-menu-item>Your Sector</nz-menu-item>
-    <nz-menu-item>About</nz-menu-item>
-    <nz-menu-item>Courses</nz-menu-item>
-    <button class="collect-button">Collect Waste</button>
-    </nz-menu>
-</nz-header>
-
-    <nz-content>
+<div nz-row>
+    <div nz-col nzSpan="24" >
+        <nz-header class="logo">
+            <div >UniSearchö</div>
+            <ul nz-menu nzMode="horizontal">
+                <li nz-menu-item>Navigation One</li>
+                <li nz-menu-item>Navigation Two</li>
+                <li nz-menu-item>
+                    <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+                </li>
+            </ul>
+        </nz-header>
+    </div>
+</div>
+<div nz-row  style="padding: 50px;">
+    <div nz-col nzSpan="24" >
         <div class="hero">
-        <h1>Find University Based on your Acadmics</h1>
-        <div class="icons">
-            <i nz-icon nzType="fire"></i>
-            <i nz-icon nzType="recycle"></i>
-            <i nz-icon nzType="factory"></i>
+            <h1>Find University Based on your Acadmics</h1>
         </div>
+        <div nz-row nzGutter="16"  nzJustify="center">
+            <div nz-col nzSpan="18">
+                <nz-card   style="margin-bottom: 30px;">
+                    <div nz-row nzJustify="space-around">
+                        <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
+                            <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
+                                Country
+                            </nz-form-label>
+                            <nz-form-control [nzSm]="24" [nzXs]="24">
+                                <input nz-input id="referenceNo" name="referenceNo" />
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
+                            <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
+                                Ielts Score
+                            </nz-form-label>
+                            <nz-form-control [nzSm]="24" [nzXs]="24">
+                                <input nz-input id="referenceNo" name="referenceNo" />
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
+                            <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
+                                GPA
+                            </nz-form-label>
+                            <nz-form-control [nzSm]="24" [nzXs]="24">
+                                <input nz-input id="referenceNo" name="referenceNo" />
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-select>
+                            <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                          </nz-select>
+                    </div>
+                </nz-card>
+            </div>
         </div>
-        <div class="grid">
-        <nz-card nzTitle="Recycling for a better world">
-            <p>Reduce & reuse waste</p>
-        </nz-card>
-        <nz-card nzTitle="Green office management course">
-            <p>Improve efficiency and minimize waste</p>
-        </nz-card>
+        <div nz-row nzGutter="16"  nzJustify="center">
+            <div nz-col nzSpan="12">
+                <nz-card  class="image-card" style="height: 30rem;">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.eLorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.eLorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.e</p>
+                </nz-card>
+            </div>
+            <div nz-col nzSpan="11">
+                <div nz-row   nzJustify="center">
+                    <div nz-col nzSpan="24">
+                        <nz-card  class="image-card">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam </p>
+                        </nz-card>
+                    </div>
+                </div>
+                <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }"  nzJustify="center" style="margin-top: 10px;">
+                    <div nz-col class="gutter-row" [nzSpan]="11">
+                        <div class="inner-box">
+                            <nz-card class="image-card">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.e</p>
+                            </nz-card>
+                        </div>
+                    </div>
+                    <div nz-col class="gutter-row" [nzSpan]="11">
+                        <div class="inner-box">
+                            <nz-card class="image-card">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.e</p>
+                            </nz-card>
+                        </div>
+                    </div>
+                    <!-- <div nz-col nzSpan="12" style="margin-right: 10px;">
+                        <nz-card class="image-card">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.e</p>
+                        </nz-card>
+                    </div>
+                    <div nz-col nzSpan="12">
+                        <nz-card class="image-card">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut atque omnis animi at possimus ea adipisci neque, voluptate nostrum exercitationem dicta, unde doloremque incidunt error quam tempora voluptates alias repellat.e</p>
+                        </nz-card>
+                    </div> -->
+                </div>
+            </div>
         </div>
-    </nz-content>
+    </div>
+</div>
+
+<div nz-content class="zoom">
+    <div nz-row class="listView" nzJustify="center">
+        <div nz-col nzSpan="23">
+            <nz-table #sortTable nzShowPagination nzShowSizeChanger id="data-table" class="custom" nzTableLayout="fixed"
+                nzSize="small" [nzData]="ActionsList" [nzScroll]="{ x: '700px' }" nzBreakWord="false" [nzPageSize]="20">
+                <thead>
+                    <tr>
+                        <!-- <th nzAlign="center"> Action Id</th> -->
+                        <th nzAlign="center"> Label</th>
+                        <th nzAlign="center"> Current Step</th>
+                        <th nzAlign="center"> Next Step</th>
+                        <th nzAlign="center"> Next Step False</th>
+                        <!-- <th nzAlign="center"> No. of Approval</th>
+                        <th nzAlign="center"> Assignment Type</th> -->
+                        <th nzAlign="center">Status</th>
+                        <th nzAlign="center" nzRight nzWidth="150px">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of sortTable.data">
+                        <td nzAlign="center">{{data.label}}</td>
+                        <td nzAlign="center">{{data?.currentStepNo}}</td>
+                        <td nzAlign="center">{{data?.nextStepNo}}</td>
+                        <td nzAlign="center">{{data?.nextStepNoFalse}}</td>
+                        <td nzAlign="center">{{data?.statusId}}</td>
+                        <td nzAlign="center" nzRight>
+                            <button  nz-button nzType="primary" nz-tooltip
+                                nzTooltipTitle="Edit" nzTooltipPlacement="top" nzSize="small">
+                                <i nz-icon nzType="edit" nzTheme="outline"></i>
+                            </button>
+                            <button class="ml-10" nz-button nzType="primary"
+                                nz-tooltip nzTooltipTitle="View" nzTooltipPlacement="top" nzSize="small">
+                                <i nz-icon nzType="eye" nzTheme="outline"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </nz-table>
+        </div>
+    </div>
+</div>

@@ -6,10 +6,21 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { LandingPageComponent } from './components/public/landing-page/landing-page.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: false,
+  standalone: true,
+  imports: [
+    RouterOutlet,
+    CommonModule,
+    NzMenuModule,
+    NzButtonModule,
+    NzLayoutModule,
+    NzCardModule,
+    NzIconModule,
+    LandingPageComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

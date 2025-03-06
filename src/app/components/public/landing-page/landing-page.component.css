@@ -1,0 +1,71 @@
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f4efe0;
+    border-bottom: 1px solid #706a5c;
+}
+nz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero {
+    text-align: left;
+    padding: 50px;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+}
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.icons i {
+    font-size: 24px;
+    color: #5a5a5a;
+}
+
+nz-card {
+    border-radius: 20px;
+}
+.collect-button {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.ant-layout, .ant-menu-horizontal{
+background-color: #f4efe0;
+}
+.ant-menu-horizontal {
+border: 0;
+}
+
+.image-card {
+    background: url('../../../Assets/Images/TU_Dramstad.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensure text is readable */
+    padding: 20px; /* Add padding to prevent content from touching edges */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+  
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+.custom-card {
+    background-size: contain; /* Prevents cutting off */
+    min-height: 150px; /* Adjust height for smaller screens */
+    padding: 10px;
+}
+}
+
+nz-select {
+    margin: 0 8px 10px 0;
+    width: 120px;
+}

@@ -18,9 +18,9 @@
             <h1>Find University Based on your Acadmics</h1>
         </div>
         <div nz-row nzGutter="16"  nzJustify="center">
-            <div nz-col nzSpan="18">
-                <nz-card   style="margin-bottom: 30px;">
-                    <div nz-row nzJustify="space-around">
+            <div nz-col nzSpan="17">
+                <nz-card   style="margin-bottom: 30px; background-color: #514a38;">
+                    <div nz-row nzJustify="space-around" class="text-white">
                         <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
                             <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
                                 Country
@@ -31,7 +31,7 @@
                         </nz-form-item>
                         <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
                             <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
-                                Ielts Score
+                                IELTS Score
                             </nz-form-label>
                             <nz-form-control [nzSm]="24" [nzXs]="24">
                                 <input nz-input id="referenceNo" name="referenceNo" />
@@ -39,15 +39,26 @@
                         </nz-form-item>
                         <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
                             <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
-                                GPA
+                                GPA (Scale 1 - 4 highest)
                             </nz-form-label>
                             <nz-form-control [nzSm]="24" [nzXs]="24">
                                 <input nz-input id="referenceNo" name="referenceNo" />
                             </nz-form-control>
                         </nz-form-item>
-                        <nz-select>
-                            <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
-                          </nz-select>
+                        <!-- <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
+                            <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
+                                GPA
+                            </nz-form-label>
+                            <nz-select ngModel="lucy">
+                                <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                                <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                                <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                            </nz-select>
+                        </nz-form-item> -->
+                        
+                        <button nz-button nzType="primary" style="background-color:#a0884d;border: 0px;padding: 5px 40px 5px 40px;margin-top: 12px;" nzShape="round">
+                            Search
+                        </button>
                     </div>
                 </nz-card>
             </div>

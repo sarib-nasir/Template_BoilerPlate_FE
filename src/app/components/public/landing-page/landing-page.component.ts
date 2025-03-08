@@ -9,10 +9,12 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzCardComponent } from 'ng-zorro-antd/card';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzButtonModule, NzButtonSize } from 'ng-zorro-antd/button';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 @Component({
   selector: 'app-landing-page',
-  imports: [CommonModule, NzIconModule, NzLayoutModule, NzMenuModule, NzCardComponent, NzTableModule, NzDividerModule, NzGridModule,FormsModule, NzSelectModule],
+  imports: [CommonModule, NzIconModule, NzLayoutModule, NzMenuModule, NzCardComponent, NzTableModule, NzDividerModule, NzGridModule,FormsModule, NzButtonModule,NzInputModule,NzSelectModule],
   standalone: true,
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'

@@ -12,3 +12,9 @@ body {
 nz-header {
   padding: 0px;
 }
+.text-white{
+  color: #ffff;
+}
+.text-white input ,.text-white select{
+  border-radius: 10px;
+}

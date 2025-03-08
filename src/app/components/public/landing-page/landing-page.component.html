@@ -1,25 +1,54 @@
+<app-public-navbar></app-public-navbar>
 <div nz-row>
     <div nz-col nzSpan="24" >
-        <nz-header class="logo">
-            <div >UniSearchö</div>
-            <ul nz-menu nzMode="horizontal">
-                <li nz-menu-item>Navigation One</li>
-                <li nz-menu-item>Navigation Two</li>
-                <li nz-menu-item>
-                    <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
-                </li>
-            </ul>
-        </nz-header>
-    </div>
-</div>
-<div nz-row  style="padding: 50px;">
-    <div nz-col nzSpan="24" >
-        <div class="hero">
-            <h1>Find University Based on your Acadmics</h1>
-        </div>
+
+        <nz-row class="hero-section ">
+            <!-- Left Content -->
+            <nz-col [nzSpan]="13" class="hero-text">
+                <h1>
+                Find your perfect <br />
+                <span class="gradient-text">University</span> - Match, Explore, Succeed!
+                </h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="buttons">
+                <button nz-button nzType="primary" class="btn-primary">Get Started</button>
+                <button nz-button nzType="default" class="btn-demo">
+                    <i nz-icon nzType="play-circle"></i> See Demo
+                </button>
+                </div>
+            </nz-col>
+            
+            <!-- Right Image -->
+            <nz-col [nzSpan]="11" class="hero-image" >
+                <div class="image-container">
+                <img src="/assets/Images/btu-bg.png" alt="Person" class="person-image" height="400" width="700" />
+                <!-- <div class="floating-shape shape-1"></div> -->
+                <!-- <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div> -->
+                </div>
+            </nz-col>
+        </nz-row>
+
+        <!-- <nz-row [nzGutter]="16">
+            <nz-col *ngFor="let university of universities" [nzXs]="24" [nzSm]="12" [nzMd]="8">
+              <nz-card class="university-card" [nzBordered]="false">
+                <div class="university-image" [style.backgroundImage]="'url(' + university.image + ')'"></div>
+                <nz-card-meta [nzTitle]="university.name" [nzDescription]="university.location"></nz-card-meta>
+                <p class="ranking">QS Ranking: {{ university.ranking }}</p>
+                <p>Tuition: {{ university.tuition }} / year</p>
+                <nz-space>
+                  <button nz-button nzType="primary" (click)="apply(university)">Apply Now</button>
+                  <button nz-button nzType="default" (click)="viewDetails(university)">More Info</button>
+                </nz-space>
+              </nz-card>
+            </nz-col>
+        </nz-row> -->
+
         <div nz-row nzGutter="16"  nzJustify="center">
             <div nz-col nzSpan="17">
-                <nz-card   style="margin-bottom: 30px; background-color: #514a38;">
+                <nz-card   style="margin-bottom: 30px; background-color: #a0884d;">
                     <div nz-row nzJustify="space-around" class="text-white">
                         <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
                             <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
@@ -45,16 +74,6 @@
                                 <input nz-input id="referenceNo" name="referenceNo" />
                             </nz-form-control>
                         </nz-form-item>
-                        <!-- <nz-form-item nz-col [nzSm]="11" [nzLg]="5" [nzXs]="23">
-                            <nz-form-label class="customLabel" [nzSm]="24" [nzXs]="24">
-                                GPA
-                            </nz-form-label>
-                            <nz-select ngModel="lucy">
-                                <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
-                                <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
-                                <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
-                            </nz-select>
-                        </nz-form-item> -->
                         
                         <button nz-button nzType="primary" style="background-color:#a0884d;border: 0px;padding: 5px 40px 5px 40px;margin-top: 12px;" nzShape="round">
                             Search
@@ -149,3 +168,4 @@
         </div>
     </div>
 </div>
+<app-public-footer></app-public-footer>

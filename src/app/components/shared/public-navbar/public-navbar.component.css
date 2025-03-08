@@ -1,0 +1,17 @@
+nz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ant-menu-horizontal {
+    border: 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f4efe0;
+    border-bottom: 1px solid #706a5c;
+}
+.ant-layout, .ant-menu-horizontal{
+    background-color: transparent;
+}

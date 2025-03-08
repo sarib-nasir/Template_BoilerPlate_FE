@@ -25,7 +25,7 @@ export class LandingPageComponent {
   USER_ICON: string = '';
   LOGOUT_ICON: string = '';
   CurrentDate: string = '';
-  CurrentYear: string = ''
+  CurrentYear: string = '' 
 
   ActionsList:any = [
     {
